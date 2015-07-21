@@ -1,3 +1,12 @@
+<?php
+
+$url=$_SERVER['REQUEST_URI'];
+echo $url;
+$url1=explode("/",$url);
+echo count($url1);
+
+print_r($url1);
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,43 +35,7 @@
         <![endif]-->
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-primary navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">FABRIMED - Muebles Clínicos</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="about.html">Nuestra Empresa</a>
-                        </li>
-                        <li>
-                            <a href="historia.html">Historia</a>
-                        </li>
-                        <li>
-                            <a href="services.html">Misión</a>
-                        </li>
-                        <li>
-                            <a href="services.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
+        <?php include_once 'navbar.php';?>
 
         <!-- Header Carousel -->
         <header id="myCarousel" class="carousel slide">
@@ -112,7 +85,7 @@
             <!-- Portfolio Section -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="page-header">Portfolio Productos</h2>
+                    <h2 class="page-header">Portfolio Productossssssssssssssss</h2>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="portfolio-item.html">
